@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to handle padding and borders properly */
+}
+
+body{
+    background-image: url('image/wallpaperflare.com_wallpaper\ \(21\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 126, 130);
+    font-family: Arial, sans-serif; /* Added a font-family for a consistent look */
+}
+
+/* Make links more readable */
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+input{
+    width: 100%; /* Use full width within its container for responsiveness */
+    height: 40px;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px;
+    border:  solid rgb(0, 126, 130);
+    background-color: transparent;
+    margin: 10px 0;
+    border-width: 0 0 2px 0;
+}
+
+
+#submit{
+    width: 100%; /* Use full width within its container */
+}
+
+#square,#square2{
+    width: 30%; /* This will be adjusted for different screen sizes */
+    max-width: 400px; /* Added to limit the maximum size */
+    height: auto;
+    padding: 30px; /* Added padding for better spacing inside the container */
+    backdrop-filter: blur(40px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 126, 130);
+    background-color: rgba(255, 255, 255, 0.2); /* Ensures readability on any background */
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#form2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+#account-forget,#account-forget2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box{
+    display: flex;
+}
+
+.box i{
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top:90px
+}
+
+
+
+@media (max-width: 768px) {
+    #square {
+        width: 50%; 
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    #square {
+        width: 80%; 
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+
+    input {
+        height: 35px;  
+    }
+
+    #submit {
+        width: 100%;
+    }
+} 

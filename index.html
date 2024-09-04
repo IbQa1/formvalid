@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    </head>
+
+    <body>
+
+            <div id="square">
+                <h1 id="title">Sign in</h1>
+               
+                    <form id="form" action="https://www.youtube.com/">
+                        <input type="email" id="sign-in-email" placeholder="email "/>  
+                        <input type="password" id="sign-in-password" placeholder="password" />
+                        <input type="submit" value="Sign in" id="submit"/>
+                    </form>
+                   
+                
+                <div id="account-forget">
+                    <label><a href="#" id="forget-password" onclick="Forget_password()">Forget Password?</a></label>
+                    <label>I don't have an account<a href="#" id="Sign-Up-a">Sign Up</a></label>
+                </div>
+            </div>
+
+
+            <div id="square2">
+                <h1 id="title2">Sign Up</h1>
+           
+                    <form id="form2" action="https://www.youtube.com/">
+                        <input id="fN-signup" type="text" placeholder="Enter First Name"/>
+                        <input id="LN-signup" type="text" placeholder="Enter Last Name"/>
+                        <input id="email-signup" type="email" placeholder="Enter email"/>
+                        <input id="password-signup" type="password" placeholder="Enter New password"/>
+                        <input id="confirm-signup" type="password" placeholder="Confirm Psssword"/>
+                        <input type="submit" value="Sign Up" id="submit"/>
+                    </form>
+             
+                <div id="account-forget2">
+                    <label>I already have an account<a href="#" id="Sign-in-a">Sign in</a></label>
+                </div>
+            </div>
+   
+
+            <script src="code.js"></script>
+    </body>
+</html>
